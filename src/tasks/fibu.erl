@@ -4,18 +4,18 @@
 %%% @doc
 %%%
 %%% @end
-%%% Created : 17. Apr 2026 18:13
+%%% Created : 17. Apr 2026 22:36
 %%%-------------------------------------------------------------------
--module(ggt).
+-module(fibu).
 -author("madni").
 
 %% API
--export([ggt/2]).
+-export([fib/1]).
 
-ggt(A, 0) ->
-  A;
-ggt(A, B) when is_integer(A), is_integer(B) ->
-  ggt(B, A rem B).
-
-
-
+fib(0) ->
+  0;
+fib(1) ->
+  1;
+fib(A) when is_integer(A), A > 1 ->
+  fib(A-1) + fib(A-2)
+  .

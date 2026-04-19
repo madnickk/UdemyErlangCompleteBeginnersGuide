@@ -4,18 +4,16 @@
 %%% @doc
 %%%
 %%% @end
-%%% Created : 17. Apr 2026 18:13
+%%% Created : 17. Apr 2026 22:22
 %%%-------------------------------------------------------------------
--module(ggt).
+-module(fakultaet).
 -author("madni").
 
 %% API
--export([ggt/2]).
+-export([fac/1]).
 
-ggt(A, 0) ->
-  A;
-ggt(A, B) when is_integer(A), is_integer(B) ->
-  ggt(B, A rem B).
-
-
-
+fac(1) ->
+  1;
+fac(A) when is_integer(A) ->
+  A * fac(A - 1)
+.
