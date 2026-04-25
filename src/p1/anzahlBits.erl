@@ -25,7 +25,6 @@ calcBits(Zahl, Bits) ->
 .
 
 
-
 %
 count_bits(0) -> 1;
 count_bits(N) ->
