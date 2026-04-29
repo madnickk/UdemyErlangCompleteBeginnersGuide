@@ -1,0 +1,28 @@
+-modul(countobjects).
+-author("Nico Pätzel").
+-export([]).
+
+
+# [a,b,a,a,b,c]
+
+count([]) ->
+    []
+count([H|Rest]) ->
+
+isInList(H, objects);
+
+in case of
+    true -> count(Rest);
+    
+    false -> count(H);
+end .
+
+
+
+
+            isInList(H, []) ->
+                false;
+            isInList(H, [T | Rest]) when H == T ->
+                true;
+            isInListe(H, [T | Rest]) when H /= T ->
+            isInListe(H, Rest).
